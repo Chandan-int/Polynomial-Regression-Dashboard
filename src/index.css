@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Custom scrollbar hiding */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #1e2538;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #7c3aed;
+  cursor: pointer;
+  border: 2px solid #a78bfa;
+  box-shadow: 0 0 6px #7c3aed88;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #7c3aed;
+  cursor: pointer;
+  border: 2px solid #a78bfa;
+}
+
+/* Canvas crisp rendering */
+canvas {
+  display: block;
+}
+
+/* Monospace for code */
+pre, code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+}
+
+/* Body dark background */
+body {
+  background: #0d1117;
+  margin: 0;
+  padding: 0;
+}
